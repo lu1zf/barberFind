@@ -1,10 +1,10 @@
 ﻿export default {
-  host: 'smtp.mailtrap.io',
-  port: 2525,
+  host: process.env.MAIL_HOST,
+  port: process.env.MAIL_PORT,
   secure: false,
   auth: {
-    user: '5f4551c72aa24e',
-    pass: '92c70c3cc4d08d',
+    user: process.env.MAIL_USER,
+    pass: process.env.MAIL_PASS,
   },
   default: {
     from: 'Luiz Silva <notification@barberfinder.com>',
